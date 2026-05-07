@@ -3998,5 +3998,805 @@
     "user_created_at": "2020-07-17T05:08:35Z",
     "user_public_repos_count": 75,
     "events_count": 87
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "c05740b06f1be908159bb46c0637b7890d3509792a8cabb4900ddcf04ee39ec4",
+    "score": 100,
+    "user_created_at": "2008-09-09T16:20:50Z",
+    "user_public_repos_count": 81,
+    "events_count": 22
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "dacf36eb443102869fd8b09d3aebcaebbe0333b32903c2e6c58f240874d13144",
+    "score": 100,
+    "user_created_at": "2017-03-26T09:01:33Z",
+    "user_public_repos_count": 5,
+    "events_count": 30
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "6906688a5f763007e61fcd58334e70a171c65a1ec113f33a56aa3c1ea75ccb6b",
+    "score": 100,
+    "user_created_at": "2025-11-25T00:48:55Z",
+    "user_public_repos_count": 0,
+    "events_count": 0
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "01d18c38dbb52e8dbc205780ab1b5fad2196cb755eb641bd0d4165cbcdfe3fd7",
+    "score": 65,
+    "user_created_at": "2009-05-28T20:32:37Z",
+    "user_public_repos_count": 97,
+    "events_count": 200
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "dc5d98f9acee58c0fcc0aa496fb25ee9285893d2e0a3ef1188a42f876fd27264",
+    "score": 100,
+    "user_created_at": "2019-07-28T20:52:23Z",
+    "user_public_repos_count": 65,
+    "events_count": 200
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "709462e9fdb8613a6da6083914bc967adb53c2215db167f12c2102a15ec56048",
+    "score": 100,
+    "user_created_at": "2026-01-30T15:16:28Z",
+    "user_public_repos_count": 3,
+    "events_count": 1
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "b5a727de41e7cf34ebcd4910456bf5d1a3700b806d6336beaf9c58d1514c99d4",
+    "score": 65,
+    "user_created_at": "2019-06-24T02:42:02Z",
+    "user_public_repos_count": 28,
+    "events_count": 198
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "28f0426205676d0998344db1c1d8a5f143baadee57861f0ba8062e81da0eda0e",
+    "score": 100,
+    "user_created_at": "2017-05-15T10:53:17Z",
+    "user_public_repos_count": 512,
+    "events_count": 55
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "a134445685b19d71492e143fff492f1441b6c48b55d5d6daf9059f8673213174",
+    "score": 35,
+    "user_created_at": "2026-05-03T17:38:15Z",
+    "user_public_repos_count": 1,
+    "events_count": 83
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "760b9e76277d53f62aa602c2cc140378bb44f44847085f3966d7f726149f05ea",
+    "score": 100,
+    "user_created_at": "2025-08-02T14:47:20Z",
+    "user_public_repos_count": 47,
+    "events_count": 200
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "2300929aa3831b202d472e3fe25537e6f85eb53454146818a2178e28e8656912",
+    "score": 40,
+    "user_created_at": "2026-04-11T20:25:15Z",
+    "user_public_repos_count": 8,
+    "events_count": 61
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "f9b0a07e004e06ca1f813446610750a20f512120f8f26b664e294ed0958771cf",
+    "score": 100,
+    "user_created_at": "2019-06-05T06:35:25Z",
+    "user_public_repos_count": 106,
+    "events_count": 188
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "f3822a4b1559bfb2a5c8f2cf2ed72be6e65d9eb45aaba820768d4359bd4d025d",
+    "score": 100,
+    "user_created_at": "2021-05-03T15:20:35Z",
+    "user_public_repos_count": 115,
+    "events_count": 200
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "af2c4d69482b085951f819e51f049bbb4eaac70fe11cbab3c4bc6d30b95d9238",
+    "score": 100,
+    "user_created_at": "2018-05-06T05:26:51Z",
+    "user_public_repos_count": 129,
+    "events_count": 114
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "b1876c5fb3af6f91f1226e96a6c8832e1c5bc9f1cc625f5ca48776052dd57f16",
+    "score": 100,
+    "user_created_at": "2013-11-04T13:57:51Z",
+    "user_public_repos_count": 158,
+    "events_count": 33
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "a52b8c936f9fb0bc317c1b8d162504b0af810faca82dd1ddf71795c2ca1a4f0b",
+    "score": 100,
+    "user_created_at": "2019-10-30T05:45:47Z",
+    "user_public_repos_count": 31,
+    "events_count": 2
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "5f997935d0cbf672ac25043420fef3270c8bde1963e5c268e4c6427a5d321afc",
+    "score": 100,
+    "user_created_at": "2017-03-30T20:52:10Z",
+    "user_public_repos_count": 12,
+    "events_count": 38
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "d67cf46b13800b546348fcef513eae743cb1ef526c0dfa7d6d22c0a4a43fc10f",
+    "score": 100,
+    "user_created_at": "2021-02-13T06:58:23Z",
+    "user_public_repos_count": 23,
+    "events_count": 200
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "3f0fe6f591775870344f64a555a22d7f3c61854f7170c69565cae2bf9cc78cd4",
+    "score": 39,
+    "user_created_at": "2024-08-09T04:36:58Z",
+    "user_public_repos_count": 27,
+    "events_count": 86
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "0bb1e6f9874e4f725996bb0fbb3e7d71b0df3dc14bf710ac86e094065f03b1c4",
+    "score": 100,
+    "user_created_at": "2018-07-13T14:01:17Z",
+    "user_public_repos_count": 6,
+    "events_count": 15
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "77b286bb85d31b63aa57a5cda03a1b4a0935d93c42f0a0d89df7eb1eb6e7bf56",
+    "score": 100,
+    "user_created_at": "2014-11-10T22:01:21Z",
+    "user_public_repos_count": 337,
+    "events_count": 148
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "53078200f7d763062971b91a4a232cdd697a71ad09c3fdcc4728b7b2a83d1775",
+    "score": 100,
+    "user_created_at": "2024-09-10T18:35:12Z",
+    "user_public_repos_count": 3,
+    "events_count": 22
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "3e04fa2840937081c138b0e14fe335badee4385adea0425d316681872202b430",
+    "score": 100,
+    "user_created_at": "2019-11-25T08:43:39Z",
+    "user_public_repos_count": 146,
+    "events_count": 59
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "90042cf8f6bc2d867bcd8f753ee269faf39520562ed1c88914add0cdede48425",
+    "score": 100,
+    "user_created_at": "2010-11-16T17:13:12Z",
+    "user_public_repos_count": 58,
+    "events_count": 11
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "a61074f14528b5ffca6ef2144b707a30e1de93fc61c1ae1f8d50f1063ceeec21",
+    "score": 100,
+    "user_created_at": "2017-08-23T20:54:57Z",
+    "user_public_repos_count": 112,
+    "events_count": 51
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "6501022155da342b1a585a2e6282a70a0c9097b5e0d2fd0e0601a6afc382a494",
+    "score": 100,
+    "user_created_at": "2019-05-13T14:43:40Z",
+    "user_public_repos_count": 9,
+    "events_count": 7
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "af15b705782357c460bc96102995a6b2f0a6f24ec56b7980492c453a24ca007e",
+    "score": 100,
+    "user_created_at": "2019-09-30T09:46:14Z",
+    "user_public_repos_count": 39,
+    "events_count": 18
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "442dda7381c7bd8898c62fe4e57954f33df5ca7e899b38a7b013672f0105dd47",
+    "score": 100,
+    "user_created_at": "2011-11-17T04:05:03Z",
+    "user_public_repos_count": 134,
+    "events_count": 200
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "47773c0aa0fe69720e126c49ea090a733b50cbb5ef044e7b915c566207c269c0",
+    "score": 100,
+    "user_created_at": "2016-11-24T11:54:12Z",
+    "user_public_repos_count": 88,
+    "events_count": 53
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "8e72979299e9b8751bdad040773b523d5e157a5abb4cb8772cc0d56ae91df12e",
+    "score": 100,
+    "user_created_at": "2025-03-18T23:14:08Z",
+    "user_public_repos_count": 1,
+    "events_count": 4
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "2328dbec30cf3a178b538bb861914971f4c046fcac662e62a4e6dbf5f123a59e",
+    "score": 100,
+    "user_created_at": "2019-08-22T10:48:20Z",
+    "user_public_repos_count": 15,
+    "events_count": 170
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "911996d7353cec7ed9f387657bf4b0f1bd1fbb6f7cc85f45a79542a60c95965f",
+    "score": 100,
+    "user_created_at": "2025-11-10T17:11:03Z",
+    "user_public_repos_count": 11,
+    "events_count": 16
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "8fb938cf46b2db18a96c3de0494ec4d37e6ff4051dd69d98239d1b0357d38e72",
+    "score": 100,
+    "user_created_at": "2015-12-22T04:43:07Z",
+    "user_public_repos_count": 16,
+    "events_count": 6
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "4c4a94dd50f5486e4ba05413577a9d067f0bd354f5dd027c6b5e27b49e7ed119",
+    "score": 100,
+    "user_created_at": "2025-10-16T13:43:20Z",
+    "user_public_repos_count": 1,
+    "events_count": 11
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "579ba3616bdde19225ce97396acb9d0acd5ad3dca7a7f244a4c31efa8e550061",
+    "score": 100,
+    "user_created_at": "2024-10-30T16:05:03Z",
+    "user_public_repos_count": 3,
+    "events_count": 18
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "fce6958a898d67a001e346ab13304a942b12390e63347e0bfab03f04d1867786",
+    "score": 100,
+    "user_created_at": "2022-04-02T04:16:23Z",
+    "user_public_repos_count": 32,
+    "events_count": 194
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "5b9ec4f132c212ee6fadea279d125569d62fec9fdf1bd39608f06ea2060ebf15",
+    "score": 50,
+    "user_created_at": "2025-11-14T18:47:40Z",
+    "user_public_repos_count": 0,
+    "events_count": 24
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "e0d4d0b8eaf42e4d71f21f39a08244145cde45870ff5c7e949af45834ec0d708",
+    "score": 80,
+    "user_created_at": "2026-04-30T08:53:24Z",
+    "user_public_repos_count": 0,
+    "events_count": 18
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "faaa62d99ad7e44743f85bb44d7d7763de48cbbfcae229665acc8361b521898b",
+    "score": 90,
+    "user_created_at": "2026-02-26T21:21:49Z",
+    "user_public_repos_count": 0,
+    "events_count": 17
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "c1874f668fdb50dd49fc617f5847a9189b4d01289eac1fb7a284866c38fde0c9",
+    "score": 100,
+    "user_created_at": "2025-08-04T20:56:27Z",
+    "user_public_repos_count": 0,
+    "events_count": 8
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "e263ce96f7f8436bea5f31a73d52e486ba1c2637f85cbfbd0cd1182ec7cd9afd",
+    "score": 100,
+    "user_created_at": "2024-10-01T19:43:46Z",
+    "user_public_repos_count": 0,
+    "events_count": 4
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "42d92028a37f7c33d60e9871402039566ff12183e8ff0cca5d6e404a26c66fe0",
+    "score": 0,
+    "user_created_at": "2018-05-23T02:36:53Z",
+    "user_public_repos_count": 268,
+    "events_count": 200
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "3f462f4d1e19fef028ae142493c627b44d9c24a6097f3a5269764d70b6ae3139",
+    "score": 100,
+    "user_created_at": "2020-11-10T16:10:16Z",
+    "user_public_repos_count": 3,
+    "events_count": 18
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "548e0ce8995ad063be18621ef7157cd694ffb56ec46d0be9e342c5334ab35e14",
+    "score": 65,
+    "user_created_at": "2026-03-07T07:14:30Z",
+    "user_public_repos_count": 11,
+    "events_count": 200
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "dd2d7f89ef901203a4360f8461f350ad863391730b6383bf6e1fd3051ca513a9",
+    "score": 100,
+    "user_created_at": "2023-08-04T16:23:02Z",
+    "user_public_repos_count": 31,
+    "events_count": 66
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "3bcf0153b4522b730265db9e6e9f7a7ee2471e1e2151c65c698586f20fb216f6",
+    "score": 100,
+    "user_created_at": "2018-05-25T15:41:04Z",
+    "user_public_repos_count": 10,
+    "events_count": 29
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "27d6234b4f5ce668488354c15711247f0ec37f904fe4d773e9485bda95eddacc",
+    "score": 100,
+    "user_created_at": "2015-06-29T11:17:01Z",
+    "user_public_repos_count": 36,
+    "events_count": 200
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "51c130b37cead061a329564c9da865b9e0247641532a46c1fb88773bf69617e3",
+    "score": 100,
+    "user_created_at": "2018-05-27T07:47:01Z",
+    "user_public_repos_count": 1,
+    "events_count": 4
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "387c1e2483df342fba321bc996a1af73d4d071a73ecde840ff5c8d8f2807d6fb",
+    "score": 100,
+    "user_created_at": "2023-08-16T08:52:14Z",
+    "user_public_repos_count": 4,
+    "events_count": 24
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "77924ff3589c592fb0c8fad55680f9ca7b34fb144804d32c68a744ce729f7f7e",
+    "score": 100,
+    "user_created_at": "2016-06-16T02:30:38Z",
+    "user_public_repos_count": 73,
+    "events_count": 49
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "43c9a5c31522d22cd942fb874ff732d845e96fd67c03d3d66de0ad71eb665ee5",
+    "score": 100,
+    "user_created_at": "2019-12-02T19:28:29Z",
+    "user_public_repos_count": 41,
+    "events_count": 7
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "4310cecf25586f6b7a1c9861462bb0b4b1d44c1ccae698b1ad1333bda2f17eea",
+    "score": 100,
+    "user_created_at": "2024-02-16T19:25:31Z",
+    "user_public_repos_count": 1,
+    "events_count": 47
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "45bfdaf9a3a803b4f31b1a96c682306c55fb626a6a3b7007fb9f6200fa7e416d",
+    "score": 100,
+    "user_created_at": "2016-11-23T19:36:40Z",
+    "user_public_repos_count": 22,
+    "events_count": 131
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "cda8f0a58f533253250732196e462ebdc840e00ff59709fc53fe09c161fada66",
+    "score": 100,
+    "user_created_at": "2016-11-29T01:43:52Z",
+    "user_public_repos_count": 81,
+    "events_count": 200
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "7b05f38ae11d25cf79c559b231fc94ba4f62e0e4c57d084e6e86cdf787457416",
+    "score": 100,
+    "user_created_at": "2025-09-01T02:27:59Z",
+    "user_public_repos_count": 0,
+    "events_count": 17
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "370f281e0b5837284537adf6b8a5ac7cd80907d2cf0657c9305872995d263ab8",
+    "score": 100,
+    "user_created_at": "2012-03-01T23:20:25Z",
+    "user_public_repos_count": 37,
+    "events_count": 91
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "d67b3a17c2caa94fa701c5eef58779b93d94cb5a29d0826e557abae8ad497aa3",
+    "score": 100,
+    "user_created_at": "2014-12-11T20:05:08Z",
+    "user_public_repos_count": 71,
+    "events_count": 20
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "a554521fd3d5b0c5073e4ee02f765f907d6a9d85125003c4eebee9b05cf64a89",
+    "score": 100,
+    "user_created_at": "2012-03-31T23:38:34Z",
+    "user_public_repos_count": 64,
+    "events_count": 200
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "f752c7b06c20e955d0b88d73ab08673ecc134c06f2325906d9c02feb2b3e85d8",
+    "score": 100,
+    "user_created_at": "2011-05-11T13:08:23Z",
+    "user_public_repos_count": 109,
+    "events_count": 22
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "7148af5ada8ef67430c62cfa5fe41aee7e01571932a60308bb6c77aa1bd103d7",
+    "score": 100,
+    "user_created_at": "2018-03-28T02:43:33Z",
+    "user_public_repos_count": 7,
+    "events_count": 28
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "62ddfa4b19faf91ec2aef45936f8b08a478c7c6f68c73a2d439227618e0100bd",
+    "score": 5,
+    "user_created_at": "2026-04-24T12:55:27Z",
+    "user_public_repos_count": 0,
+    "events_count": 76
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "be652f4f66b4eb2884c6189b23d4aef60a48bbf23191144434ceba88a641b259",
+    "score": 100,
+    "user_created_at": "2023-10-22T18:25:11Z",
+    "user_public_repos_count": 3,
+    "events_count": 17
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "44ac6c13379cf2158cef04c187e43e358c2b80b7613004c5eca3675f8d3ab4aa",
+    "score": 100,
+    "user_created_at": "2010-11-11T09:51:57Z",
+    "user_public_repos_count": 110,
+    "events_count": 110
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "fe12a139fd140a632df97994809c86d4717c4aec08fc9fb7e7ec0423332e4687",
+    "score": 100,
+    "user_created_at": "2018-04-25T07:26:11Z",
+    "user_public_repos_count": 113,
+    "events_count": 200
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "ce005690a3ac4ad15c2f7292e2946c972ab164a2ecb3ded4397e18c9eb5cf775",
+    "score": 100,
+    "user_created_at": "2019-02-13T09:27:14Z",
+    "user_public_repos_count": 63,
+    "events_count": 76
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "0f6cdf3b41c2e91e9f504946eb1197f31b809e0004db7c374771a51dbd460dce",
+    "score": 100,
+    "user_created_at": "2024-03-15T13:56:34Z",
+    "user_public_repos_count": 15,
+    "events_count": 0
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "773195875388df35db36c84f78ec1e3103629843a1be6a9c6c031fc252be65f6",
+    "score": 65,
+    "user_created_at": "2025-11-12T03:14:31Z",
+    "user_public_repos_count": 3,
+    "events_count": 123
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "8a0528f39d01d7e0d711f0a5594ff4c51e41515ea1bfa6b63c70d10ebebf9c66",
+    "score": 100,
+    "user_created_at": "2015-07-13T08:11:36Z",
+    "user_public_repos_count": 55,
+    "events_count": 200
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "b477f7739349ac9af9427634c1b0f21c7f2f05e0b9548cb8c59995fbbb0264d4",
+    "score": 100,
+    "user_created_at": "2023-12-13T01:15:16Z",
+    "user_public_repos_count": 13,
+    "events_count": 94
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "5c36e8653b27b378760c1966df87bd089f817b2a61821d1dea51daa076bc4078",
+    "score": 100,
+    "user_created_at": "2026-01-09T01:18:56Z",
+    "user_public_repos_count": 11,
+    "events_count": 8
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "feab2d2fc00170d76572ac547754e7e47f273e0ae9a6715b2e1bd67a8e56ba82",
+    "score": 100,
+    "user_created_at": "2020-10-15T23:56:32Z",
+    "user_public_repos_count": 17,
+    "events_count": 5
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "779c117119b549e3ca4507112658af38244255f0942d2914cd468c264ffd90d6",
+    "score": 100,
+    "user_created_at": "2014-07-06T09:05:37Z",
+    "user_public_repos_count": 158,
+    "events_count": 6
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "5eaa1d58c03e88cd5d65877393ca017ba583568994b3c98e86909cffb6a1e075",
+    "score": 100,
+    "user_created_at": "2022-10-01T10:22:15Z",
+    "user_public_repos_count": 11,
+    "events_count": 2
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "0bb4cd384e6cd11651b5576934ba7aa7d54a4ac2a58adeaf922687388b4d2722",
+    "score": 100,
+    "user_created_at": "2024-08-31T13:43:59Z",
+    "user_public_repos_count": 86,
+    "events_count": 1
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "b9e02ad7bff64f48a1c31f280ab399d8c29e584b227e0e63ef66f2d12a8721a8",
+    "score": 100,
+    "user_created_at": "2019-09-19T14:00:26Z",
+    "user_public_repos_count": 1,
+    "events_count": 8
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "f784984cb44c573fa67f002869a6ff35668a09309ba5770beb6da3e4a08176c1",
+    "score": 100,
+    "user_created_at": "2019-03-12T13:22:05Z",
+    "user_public_repos_count": 1,
+    "events_count": 5
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "70a26102b70f8a3081cc23be8f766f2f27024cfdf952bcfc89316fa91c7ee13c",
+    "score": 100,
+    "user_created_at": "2020-03-17T11:00:58Z",
+    "user_public_repos_count": 10,
+    "events_count": 104
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "5b554ea431976f29f6e09e48b9b33adef02622e427c347ce9b18402abc407678",
+    "score": 100,
+    "user_created_at": "2014-12-13T07:59:56Z",
+    "user_public_repos_count": 24,
+    "events_count": 14
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "3353a17a6f5b00361f9f58bf9dc5df69872821c143edba1e5ce81f7027645f06",
+    "score": 100,
+    "user_created_at": "2015-08-01T16:34:45Z",
+    "user_public_repos_count": 116,
+    "events_count": 18
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "009140e35058ce35087f89794954a4ebc3cec0c844325f4c3daccc76bbd497af",
+    "score": 100,
+    "user_created_at": "2020-12-15T19:15:23Z",
+    "user_public_repos_count": 3,
+    "events_count": 5
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "970f8bec74b292cf9f16b445e3e803638fe525d46700480981c8e3317533f17e",
+    "score": 100,
+    "user_created_at": "2016-12-12T23:20:12Z",
+    "user_public_repos_count": 1,
+    "events_count": 5
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "abd486ffafef58c54dec32de8e9a45200a25177db9686b42deea3337488043f6",
+    "score": 100,
+    "user_created_at": "2021-08-11T08:50:00Z",
+    "user_public_repos_count": 5,
+    "events_count": 7
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "9f59c005fadb952e1df068b70cacee3b0b3325a830e85db52ce9882727583c21",
+    "score": 100,
+    "user_created_at": "2019-08-21T20:15:13Z",
+    "user_public_repos_count": 2,
+    "events_count": 6
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "5e6c3f4a8ee439bb2ee613b16b9f6c974345bd67814216991cd4403d16603790",
+    "score": 100,
+    "user_created_at": "2022-01-14T19:09:36Z",
+    "user_public_repos_count": 11,
+    "events_count": 6
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "707d3afab597184fd6082bf8d63e6bc5d04b149baaa5ea4781e01c5a84011a0d",
+    "score": 100,
+    "user_created_at": "2020-08-17T06:31:00Z",
+    "user_public_repos_count": 32,
+    "events_count": 36
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "ac9ce5502f9779d2bd2f69acc6210cd361bb608e32c2f36201e4e945552a1211",
+    "score": 100,
+    "user_created_at": "2024-03-21T17:57:13Z",
+    "user_public_repos_count": 40,
+    "events_count": 200
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "37b2abd4f9ee811cd39cc50ccd5f1c1ca2362e979cc96745dd210229576fb3d7",
+    "score": 100,
+    "user_created_at": "2025-01-10T08:38:18Z",
+    "user_public_repos_count": 3,
+    "events_count": 23
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "b073ad061b630d51e7f900ff2ab106d382d13378cb06e5681c6e9b651ebdc772",
+    "score": 100,
+    "user_created_at": "2014-06-13T18:15:51Z",
+    "user_public_repos_count": 11,
+    "events_count": 0
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "aff865030495aa6d718ab935cd868dd66c22fd8c3e4a5003219927c46c643770",
+    "score": 15,
+    "user_created_at": "2021-11-15T19:55:39Z",
+    "user_public_repos_count": 2,
+    "events_count": 85
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "27337fd0f7478bcfe417ce4305d0bf85834962bdc2619ea223583e91894e9f31",
+    "score": 100,
+    "user_created_at": "2020-05-25T00:24:32Z",
+    "user_public_repos_count": 22,
+    "events_count": 23
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "9580942f686ae9aeaf613efd5e8c18e44d924fc0aaf45e6d3c40bd012d48990e",
+    "score": 100,
+    "user_created_at": "2017-11-01T17:04:21Z",
+    "user_public_repos_count": 25,
+    "events_count": 196
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "907d1a4168a3bc848b1a4ad1de569d21ec9361a41b05683a7609426cfb3d96d9",
+    "score": 100,
+    "user_created_at": "2015-03-30T16:07:04Z",
+    "user_public_repos_count": 34,
+    "events_count": 79
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "a2a352316305387d8ee59f823f2ad87e7a8b7cbf36ad617e80bddf15768c01a8",
+    "score": 100,
+    "user_created_at": "2024-05-23T09:46:13Z",
+    "user_public_repos_count": 10,
+    "events_count": 10
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "7146842083eb861333e568b27feb6cc19a31c4b8f4dfcc918d7f7a67276a9040",
+    "score": 100,
+    "user_created_at": "2020-04-03T21:29:47Z",
+    "user_public_repos_count": 74,
+    "events_count": 35
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "a7ee267ac572833b9bffaa2f5b0337ddb3a83179a5d167545dbdcb11f255e8c3",
+    "score": 80,
+    "user_created_at": "2016-09-06T09:04:51Z",
+    "user_public_repos_count": 7,
+    "events_count": 36
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "6a64a7825df2208af6ff03340c39abd3b852c77c6fc7aef60d749f9e2ad44ec8",
+    "score": 100,
+    "user_created_at": "2023-03-11T18:40:35Z",
+    "user_public_repos_count": 3,
+    "events_count": 200
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "2fc9fb230031cb8791d1f0f6666d39ebe535eedbba368af13061a1f224ccee35",
+    "score": 100,
+    "user_created_at": "2020-06-04T10:49:34Z",
+    "user_public_repos_count": 3,
+    "events_count": 61
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "9f780d5cd7eda3cb1b1fa18c9c74651e8051fe540a2f3d21f5cd6e7031620cd1",
+    "score": 100,
+    "user_created_at": "2017-05-07T22:00:48Z",
+    "user_public_repos_count": 1,
+    "events_count": 5
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "88ac780c5d29c2d7c71984232babfb8b644c3fa5d5ab69a9f5843a96e58564a2",
+    "score": 100,
+    "user_created_at": "2014-10-27T21:55:11Z",
+    "user_public_repos_count": 42,
+    "events_count": 59
+  },
+  {
+    "created_at": "2026-05-07",
+    "hash": "09e881d2fa5054b4d5837dc8e392d871b60158f8dc262f23603c3d632c9cf90d",
+    "score": 100,
+    "user_created_at": "2012-10-26T09:37:01Z",
+    "user_public_repos_count": 93,
+    "events_count": 34
   }
 ]
