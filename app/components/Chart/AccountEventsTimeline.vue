@@ -40,16 +40,19 @@ const eventConfig = computed(() => {
       pr: colors.value.eventOrganicPr,
       branch: colors.value.eventOrganicBranch,
       fork: colors.value.eventOrganicFork,
+      comment: colors.value.eventOrganicComment,
     },
     mixed: {
       pr: colors.value.eventMixedPr,
       branch: colors.value.eventMixedBranch,
       fork: colors.value.eventMixedFork,
+      comment: colors.value.eventMixedComment,
     },
     automation: {
       pr: colors.value.eventAutomationPr,
       branch: colors.value.eventAutomationBranch,
       fork: colors.value.eventAutomationFork,
+      comment: colors.value.eventAutomationComment,
     },
   };
 
@@ -67,6 +70,10 @@ const eventConfig = computed(() => {
     PullRequestEvent: {
       name: "Pull requests",
       color: color.pr,
+    },
+    IssueCommentEvent: {
+      name: "Comments",
+      color: color.comment,
     },
   };
 });
@@ -96,6 +103,7 @@ function createStacklineDataset(
     PullRequestEvent: {},
     CreateEvent: {},
     ForkEvent: {},
+    IssueCommentEvent: {},
   };
 
   for (const event of events) {
@@ -108,11 +116,14 @@ function createStacklineDataset(
     counts[event.type][day] = (counts[event.type][day] || 0) + 1;
   }
 
-  return githubEventTypes.map((eventType) => ({
-    name: eventConfig.value[eventType].name,
-    color: eventConfig.value[eventType].color,
-    series: days.map((day) => counts[eventType][day] || 0),
-  }));
+  return githubEventTypes.map((eventType) => {
+    const config = eventConfig.value[eventType];
+    return {
+      name: config.name,
+      color: config.color,
+      series: days.map((day) => counts[eventType][day] || 0),
+    };
+  });
 }
 
 const dataset = computed<VueUiStacklineDatasetItem[]>(() => {
