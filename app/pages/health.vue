@@ -20,7 +20,7 @@ useHead({
     {
       property: "og:description",
       content:
-        "Track GitHub ecosystem health with daily analysis of unique accounts from trending repositories. Monitor automation, mixed, and organic activity patterns over time to understand ecosystem trends.",
+        "A snapshot of GitHub community activity patterns to measure the overall ecosystem health.",
     },
     { property: "og:type", content: "website" },
   ],
@@ -134,12 +134,6 @@ const latestDayStats = computed<ClassificationStats | null>(() => {
         <div class="max-h-[300px] sm:max-h-[500px] w-full h-full">
           <ChartGlobalStatusDashboard :data />
         </div>
-        <!-- <p
-          class="mt-4 2xl:mt-8 text-center w-full max-w-2xl text-pretty text-xs text-gh-muted/70"
-        >
-          *We analyze 100 unique accounts daily from trending repositories,
-          classifying them as organic, mixed, or automated.
-        </p> -->
       </div>
     </section>
   </div>

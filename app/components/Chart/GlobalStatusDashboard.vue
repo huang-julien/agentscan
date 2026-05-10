@@ -84,23 +84,6 @@ const timestamps = computed(() => {
   return [...new Set(props.data.map((item) => item.created_at))].sort();
 });
 
-const selectedIndex = shallowRef<number | undefined>(undefined);
-
-function setSelectedIndex(
-  payload:
-    | number
-    | { index?: number; selectedIndex?: number; seriesIndex?: number }
-    | undefined
-    | null,
-) {
-  if (typeof payload === "number") {
-    selectedIndex.value = payload;
-    return;
-  }
-
-  selectedIndex.value = payload?.index ?? payload?.selectedIndex ?? undefined;
-}
-
 const { width, height } = useElementSize(chartContainer);
 </script>
 
