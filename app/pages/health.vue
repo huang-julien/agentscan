@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { IdentityClassification } from "@unveil/identity";
 
-const { data, status, error } = useScan();
+const { data } = useScan();
 
 definePageMeta({
   layout: false,
@@ -87,6 +87,11 @@ const latestDayStats = computed<ClassificationStats | null>(() => {
 
 <template>
   <div class="flex flex-col gap-6 justify-center h-svh">
+    <header class="px-4 py-2">
+      <NuxtLink to="/" aria-label="Homepage">
+        <span class="i-carbon-scan relative top-1 text-gh-text text-xl" />
+      </NuxtLink>
+    </header>
     <section class="flex flex-col gap-6 h-full">
       <div class="h-full flex flex-col items-center justify-center w-full">
         <div class="mx-auto max-w-3xl p-8">
