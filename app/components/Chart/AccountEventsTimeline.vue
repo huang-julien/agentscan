@@ -7,10 +7,9 @@ import {
 import { getCompleteDayRange } from "./chart";
 import type { GitHubEvent, GitHubEventType } from "~~/shared/types/identity";
 import { githubEventTypes } from "~~/shared/types/identity";
-import { useElementSize } from "@vueuse/core";
 import { useChartTooltipPosition } from "~/composables/useChartTooltipPosition";
 import { useColors } from "~/composables/useColors";
-import { identityConfig } from "@unveil/identity";
+import { identityConfig, type IdentityClassification } from "@unveil/identity";
 import { VueUiIcon } from "vue-data-ui/vue-ui-icon";
 import type { VueUiXyDatasetLineItem } from "vue-data-ui/vue-ui-xy";
 
@@ -18,7 +17,7 @@ import("vue-data-ui/style.css");
 
 const props = defineProps<{
   events: GitHubEvent[];
-  classification?: "organic" | "mixed" | "automation";
+  classification?: IdentityClassification;
 }>();
 
 const rootEl = shallowRef<HTMLElement | null>(null);
@@ -29,7 +28,6 @@ onMounted(async () => {
 });
 
 const colors = useColors(rootEl);
-const { width } = useElementSize(rootEl);
 
 const metrics = ["Forks", "New branches", "Pull requests", "Total"];
 
@@ -103,7 +101,7 @@ const eventDays = computed(() => {
   ).sort();
 });
 
-const hasEnoughDays = computed<boolean>(() => eventDays.value.length > 1);
+const hasEnoughDays = computed<boolean>(() => eventDays.value.length > 4);
 
 const activeGitHubEventTypes = computed(() => {
   return githubEventTypes.filter(
@@ -406,13 +404,15 @@ function isTooltipAlert(series: {
         </g>
       </template>
     </VueUiXy>
-    <div
-      v-if="isEmpty"
-      class="w-full h-40 flex place-items-center justify-center"
-    >
+    <div v-else class="w-full h-40 flex place-items-center justify-center">
       <div class="flex flex-col items-center gap-4">
-        <VueUiIcon name="chartSparkline" :stroke="colors.text" />
-        <p class="text-gh-muted">No activity to display</p>
+        <span class="i-carbon:chart-line-smooth text-gh-muted"></span>
+        <div class="flex flex-col items-center">
+          <p class="text-gh-muted text-base">Insufficient activity data</p>
+          <p class="text-gh-muted/50 text-sm">
+            Not enough events to display a timeline
+          </p>
+        </div>
       </div>
     </div>
   </ClientOnly>

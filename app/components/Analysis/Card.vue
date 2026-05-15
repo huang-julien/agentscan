@@ -247,7 +247,6 @@ useSeoAnalysis(identifyAnalysis, {
     </div>
 
     <ChartAccountEventsTimeline
-      v-if="data.events.length"
       :classification="data.analysis.classification"
       :events="data.events"
     />
