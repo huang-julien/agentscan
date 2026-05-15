@@ -85,7 +85,7 @@ const scoreStyle = computed<ScoreStyle>(() => {
     };
   }
 
-  if (classification.value === "mixed" || hasActivityReport) {
+  if (classification.value === "mixed" || hasActivityReport.value) {
     return {
       text: "text-amber-500",
       border: "border-amber-500",
