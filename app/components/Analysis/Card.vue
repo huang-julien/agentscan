@@ -127,6 +127,7 @@ const identifyAnalysis = computed<IdentifyReplicantResult | undefined>(() => {
 
 useSeoAnalysis(identifyAnalysis, {
   hasCommunityFlag,
+  hasActivityReport,
 });
 </script>
 
