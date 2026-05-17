@@ -23,7 +23,7 @@ jobs:
           key: agentscan-cache-${{ github.actor }}
           restore-keys: agentscan-cache-
       - name: AgentScan
-        uses: MatteoGabriele/agentscan-action@d07b19b22bceafa1c573ebd7339e4e2c8e1ba172
+        uses: MatteoGabriele/agentscan-action@21f25b07e4dda43e6597ffb71c93f8e4c9fed812
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           skip-members: "MatteoGabriele,graphieros"
