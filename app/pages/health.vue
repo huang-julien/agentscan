@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import type { IdentityClassification } from "@unveil/identity";
-import { getClassificationDetails, identityConfig } from "@unveil/identity";
-import dayjs from "dayjs";
+import { identityConfig } from "@unveil/identity";
 
-const { data } = useEcosystemHealth();
+const { data } = await useEcosystemHealth();
 
 definePageMeta({
   layout: false,
@@ -91,7 +90,7 @@ const latestDayStats = computed<ClassificationStats | null>(() => {
   };
 });
 
-const DAYS_LEFT = 7;
+const MIN_DAY_DATA_COLLECTION = 4;
 const hasEnoughData = computed(() => {
   if (!data.value?.length) {
     return false;
@@ -99,7 +98,7 @@ const hasEnoughData = computed(() => {
 
   const uniqueDates = new Set(data.value.map((item) => item.created_at));
 
-  return uniqueDates.size >= DAYS_LEFT;
+  return uniqueDates.size >= MIN_DAY_DATA_COLLECTION;
 });
 </script>
 
@@ -121,9 +120,8 @@ const hasEnoughData = computed(() => {
                 overall ecosystem health.
               </p>
               <p class="text-xs text-gh-muted/70">
-                *Each day, we analyze 10 PRs from 10 unique authors across 10
-                randomly selected repositories from GitHub's trending projects
-                of the day.
+                *Each day, we analyze 10 PRs from a curated list of
+                repositories.
               </p>
             </div>
           </header>
