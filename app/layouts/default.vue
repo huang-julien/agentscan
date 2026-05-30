@@ -47,21 +47,21 @@ const isHomePage = computed<boolean>(() => route.name === "index");
 
   <div class="flex flex-col">
     <div class="min-h-svh flex flex-col">
-      <header class="h-12 flex justify-between items-center px-4 md:px-6 py-4">
+      <header class="h-12 flex justify-between items-center px-2 md:px-6 py-4">
         <div>
           <NuxtLink
             external
             target="_blank"
             to="https://github.com/marketplace/actions/agentscan"
-            class="inline-flex items-center px-2.5 gap-2 py-1 text-xs font-medium rounded-full border border-gh-border/80 text-gh-muted hover:text-gh-text hover:border-gh-border/60 transition-colors"
+            class="inline-flex items-center px-2 gap-1 py-1 text-xs font-medium rounded-full border border-gh-border/80 text-gh-muted hover:text-gh-text hover:border-gh-border/60 transition-colors whitespace-nowrap"
             title="Use it as a GitHub Action"
           >
             <span class="i-carbon:logo-github text-sm" />
-            Use as GitHub Action
+            GitHub Action
           </NuxtLink>
         </div>
         <nav>
-          <ul class="flex items-center gap-6">
+          <ul class="flex items-center gap-3 md:gap-6">
             <li>
               <NuxtLink
                 to="/health"
