@@ -19,7 +19,7 @@
     "@unveil/identity": "^1.5.1",
     "@vueuse/core": "^14.2.1",
     "dayjs": "^1.11.19",
-    "nuxt": "^4.3.1",
+    "nuxt": "^4.4.6",
     "octokit": "^5.0.5",
     "valibot": "^1.2.0",
     "vue": "^3.5.28",
