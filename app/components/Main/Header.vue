@@ -14,6 +14,17 @@ watch(isMenuOpen, (value) => {
     window.document.body.classList.remove("overflow-hidden");
   }
 });
+
+watch(
+  () => route.path,
+  () => {
+    isMenuOpen.value = false;
+  },
+);
+
+onBeforeUnmount(() => {
+  window.document.body.classList.remove("overflow-hidden");
+});
 </script>
 
 <template>
