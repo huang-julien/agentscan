@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { identityConfig } from "@unveil/identity";
 import dayjs from "dayjs";
 
 const props = defineProps<{
@@ -125,6 +126,12 @@ const identifyAnalysis = computed<IdentifyReplicantResult | undefined>(() => {
   return data.value?.analysis;
 });
 
+const score = computed<number | undefined>(() => {
+  return data.value?.analysis.score;
+});
+
+const { nearestClassification } = useNearestClassification(score);
+
 useSeoAnalysis(identifyAnalysis, {
   hasCommunityFlag,
   hasActivityReport,
@@ -141,13 +148,24 @@ useSeoAnalysis(identifyAnalysis, {
     >
       <div class="w-full">
         <header class="flex items-center justify-between mb-2">
-          <div>
-            <span class="flex gap-2 items-center mb-2" :class="scoreStyle.text">
-              <span :class="classificationIcon" class="text-base" />
-              <h3 class="text-xl font-mono">
-                {{ classificationDetails.label }}
-              </h3>
-            </span>
+          <div class="w-full">
+            <div class="mb-2 flex flex-col">
+              <div
+                v-if="nearestClassification"
+                class="flex items-center gap-2 text-sm text-gh-muted mb-2"
+              >
+                <span class="i-lucide:megaphone text-xs"></span>
+                <span class="text-pretty line-height-none">
+                  Activity close to {{ nearestClassification }} signals.
+                </span>
+              </div>
+              <span class="flex gap-2 items-center" :class="scoreStyle.text">
+                <span :class="classificationIcon" class="text-base" />
+                <h3 class="text-xl font-mono">
+                  {{ classificationDetails.label }}
+                </h3>
+              </span>
+            </div>
             <p class="mt-1 text-gh-text">
               {{ classificationDetails.description }}
             </p>
