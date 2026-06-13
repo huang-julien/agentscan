@@ -8,6 +8,8 @@ function handleSubmit(name: string) {
 </script>
 
 <template>
-  <AnalysisForm v-model="accountName" @submit="handleSubmit" />
+  <div class="max-w-2xl mx-auto">
+    <AnalysisForm v-model="accountName" @submit="handleSubmit" />
+  </div>
   <VerifiedAutomationList class="mt-2" />
 </template>

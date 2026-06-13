@@ -10,7 +10,7 @@
   --bg: #0b0b0b;
   --card: #161616;
   --border: #262626;
-  --border-light: #333333;
+  --border-light: #575757;
   --text: #f0f0f0;
   --text-transparent: rgba(240, 240, 240, 0.25);
   --text-muted: #808080;
@@ -49,8 +49,8 @@
 :root[data-theme="light"] {
   --bg: #f6f8fa;
   --card: #ffffff;
-  --border: #d0d7de;
-  --border-light: #eaeef2;
+  --border: #b7b7b7;
+  --border-light: #d0d7de;
   --text: #222222;
   --text-transparent: rgba(34, 34, 34, 0.25);
   --text-muted: #57606a;
