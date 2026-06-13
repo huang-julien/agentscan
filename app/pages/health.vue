@@ -53,14 +53,16 @@ const latestDayStats = computed<ClassificationStats | null>(() => {
   return getHealthStats(data.value);
 });
 
-const automatedPrClosure = computed(() => ({
-  label: "Automation PR closure rate",
-  bgColor: "bg-gray-500",
-  percentage: (() => {
-    const value = getClosedPrPercentageTotal(data.value, [0, 50]);
-    return value === null ? "N/A" : `${value}%`;
-  })(),
-}));
+const automatedPrClosure = computed(() => {
+  const value = getClosedPrPercentageTotal(data.value, [0, 50]);
+  const percentage = value === null ? "N/A" : `${value}%`;
+
+  return {
+    label: "Automation PR closure rate",
+    bgColor: "bg-gray-500",
+    percentage,
+  };
+});
 
 const MIN_DAY_DATA_COLLECTION = 4;
 const hasEnoughData = computed(() => {
@@ -91,8 +93,9 @@ const hasEnoughData = computed(() => {
                 external
                 target="_blank"
                 to="https://github.com/MatteoGabriele/agentscan/tree/main/shared/daily-scan.ts"
-                >list of repositories</NuxtLink
               >
+                list of repositories
+              </NuxtLink>
             </p>
           </div>
         </header>
@@ -142,12 +145,12 @@ const hasEnoughData = computed(() => {
             <span
               :class="`size-2 ${automatedPrClosure.bgColor} block rounded-full`"
             ></span>
-            <p class="text-sm text-gh-text">
+            <div class="text-sm text-gh-text flex gap-2">
               {{ automatedPrClosure.label }}
               <span class="text-gh-muted">
                 {{ automatedPrClosure.percentage }}
               </span>
-            </p>
+            </div>
           </li>
         </ul>
       </div>
