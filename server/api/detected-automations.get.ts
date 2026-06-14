@@ -57,6 +57,8 @@ export default defineEventHandler(async () => {
             username: item.username,
             userId: item.user_id,
             totalPrs: 1,
+            score: item.score,
+            classification: classifyByScore(item.score),
           });
         }
 

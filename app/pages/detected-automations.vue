@@ -84,6 +84,9 @@ useHead({
               Username
             </th>
             <th class="text-right py-2 px-3 font-semibold text-gh-text">
+              Classification (at time of scan)
+            </th>
+            <th class="text-right py-2 px-3 font-semibold text-gh-text">
               Pull Requests
             </th>
           </tr>
@@ -102,6 +105,9 @@ useHead({
                 <span class="i-lucide:user-round"></span>
                 <span>{{ item.username ?? `User ${item.userId}` }}</span>
               </NuxtLink>
+            </td>
+            <td class="py-3 px-3 text-right text-gh-muted">
+              {{ item.classification }} ({{ item.score }} points)
             </td>
             <td class="py-3 px-3 text-right text-gh-muted">
               {{ item.totalPrs }} PR{{ item.totalPrs === 1 ? "" : "s" }}

@@ -1,3 +1,4 @@
+import type { IdentityClassification } from "@unveil/identity";
 import { libraries } from "~~/shared/daily-scan";
 
 export type VerifiedAutomation = {
@@ -25,4 +26,6 @@ export type DetectedAutomation = {
   username: string;
   userId: number;
   totalPrs: number;
+  score: number;
+  classification: IdentityClassification;
 };
