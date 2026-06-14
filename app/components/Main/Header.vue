@@ -7,7 +7,6 @@ const isHomePage = computed<boolean>(() => route.name === "index");
   <header class="h-12 flex justify-between items-center px-4 lg:px-6 py-4">
     <div class="flex-1">
       <NuxtLink
-        v-if="!isHomePage"
         class="flex gap-2 items-center text-gh-text"
         to="/"
         aria-label="Homepage"
@@ -16,8 +15,9 @@ const isHomePage = computed<boolean>(() => route.name === "index");
         AgentScan
       </NuxtLink>
     </div>
-    <div class="hidden md:block">
+    <div class="hidden lg:block">
       <ul class="flex items-center gap-4">
+        <li><MainMenuItem to="/" label="Search" /></li>
         <li><MainMenuItem to="/health" label="Ecosystem health" /></li>
         <li><MainMenuItem to="/lab" label="The lab" /></li>
         <li><MainMenuItem to="/automations" label="Community flags" /></li>
@@ -37,7 +37,7 @@ const isHomePage = computed<boolean>(() => route.name === "index");
         <span>GitHub action</span>
       </NuxtLink>
 
-      <MainMobileMenu class="md:hidden" />
+      <MainMobileMenu class="lg:hidden" />
     </div>
   </header>
 </template>
