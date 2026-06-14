@@ -5,10 +5,13 @@ import {
 } from "~~/shared/types/automation";
 import { identityConfig } from "@unveil/identity";
 import { cicdBots } from "~~/shared/daily-scan";
+import dayjs from "dayjs";
 
 export default defineEventHandler(async () => {
   const config = useRuntimeConfig();
   const octokit = new Octokit({ auth: config.githubToken });
+  let results: DetectedAutomation[] = [];
+  let lastScanDate: string | undefined;
 
   try {
     const { data: scanResults } = await octokit.rest.repos.getContent({
@@ -22,11 +25,23 @@ export default defineEventHandler(async () => {
         "utf-8",
       );
       const scanned = JSON.parse(content) as DetectedAutomationResponse[];
-      return scanned.reduce<DetectedAutomation[]>((coll, item) => {
+      const dates = [
+        ...new Set(scanned.map((item) => item.created_at)),
+      ].toSorted();
+
+      lastScanDate = dates.toReversed()[0];
+
+      results = scanned.reduce<DetectedAutomation[]>((coll, item) => {
+        const isLastScannedBatch = dayjs(item.created_at).isSame(
+          lastScanDate,
+          "day",
+        );
+
         if (
           !item.username ||
           cicdBots.includes(item.username) ||
-          item.score >= identityConfig.THRESHOLD_SUSPICIOUS
+          item.score >= identityConfig.THRESHOLD_HUMAN ||
+          !isLastScannedBatch
         ) {
           return coll;
         }
@@ -37,14 +52,11 @@ export default defineEventHandler(async () => {
 
         if (automation) {
           automation.totalPrs++;
-          automation.lastDetected = item.created_at;
         } else {
           coll.push({
             username: item.username,
             userId: item.user_id,
             totalPrs: 1,
-            score: item.score,
-            firstDetected: item.created_at,
           });
         }
 
@@ -52,7 +64,10 @@ export default defineEventHandler(async () => {
       }, []);
     }
 
-    return [];
+    return {
+      results,
+      lastScanDate,
+    };
   } catch {
     throw createError({
       statusCode: 500,

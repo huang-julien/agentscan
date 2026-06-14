@@ -4,24 +4,8 @@ import relativeTime from "dayjs/plugin/relativeTime";
 
 dayjs.extend(relativeTime);
 
-const { data, status, error } = useDetectedAutomations();
+const { data, error } = await useDetectedAutomations();
 const search = ref("");
-
-const formatRelativeTime = (dateString: string): string => {
-  return dayjs(dateString).fromNow();
-};
-
-const formatDateNice = (dateString: string): string => {
-  return dayjs(dateString).format("MMM D, YYYY");
-};
-
-const isSameDate = (date1: string, date2: string): boolean => {
-  return dayjs(date1).isSame(date2, "day");
-};
-
-const items = computed(() => {
-  return data.value ?? [];
-});
 
 const fuzzySearch = (query: string, text: string): boolean => {
   const queryTrimmed = query.toLowerCase();
@@ -36,7 +20,12 @@ const fuzzySearch = (query: string, text: string): boolean => {
   return true;
 };
 
-const filteredItems = computed(() => {
+const items = computed<DetectedAutomation[]>(() => {
+  const results = data.value?.results ?? [];
+  return results.toSorted((a, b) => b.totalPrs - a.totalPrs);
+});
+
+const filteredItems = computed<DetectedAutomation[]>(() => {
   const query = search.value.trim();
 
   if (!query) {
@@ -66,9 +55,13 @@ useHead({
     <p class="text-gh-muted mt-2">
       Accounts identified by the daily
       <NuxtLink to="/health" class="underline hover:text-gh-text">
-        GitHub Ecosystem Health
+        Ecosystem Health
       </NuxtLink>
-      scan as showing signs of automated behavior.
+      scan for signs of partial or fully automated behavior.
+    </p>
+
+    <p v-if="data?.lastScanDate" class="mt-6 text-sm text-gh-text">
+      Last updated: <NuxtTime :datetime="data.lastScanDate" />
     </p>
 
     <input
@@ -79,58 +72,7 @@ useHead({
     />
   </header>
 
-  <div v-if="status === 'pending'" class="mt-12">
-    <div class="overflow-x-auto">
-      <table class="w-full text-sm">
-        <thead>
-          <tr class="border-b border-gh-border-light">
-            <th class="text-left py-2 px-3 font-semibold text-gh-text">
-              Username
-            </th>
-            <th class="text-right py-2 px-3 font-semibold text-gh-text">
-              Pull Requests
-            </th>
-            <th
-              class="hidden md:table-cell text-left py-2 px-3 font-semibold text-gh-text"
-            >
-              First Detected
-            </th>
-            <th
-              class="hidden md:table-cell text-left py-2 px-3 font-semibold text-gh-text"
-            >
-              Last Detected
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr
-            v-for="item in 12"
-            :key="item"
-            class="border-b border-gh-border-light"
-          >
-            <td class="py-3 px-3">
-              <div class="h-4 bg-gh-border rounded w-42 animate-pulse" />
-            </td>
-            <td class="py-3 px-3 text-right">
-              <div
-                class="h-4 bg-gh-border rounded w-12 ml-auto animate-pulse"
-              />
-            </td>
-            <td class="hidden md:table-cell py-3 px-3">
-              <div class="h-4 bg-gh-border rounded w-1/3 animate-pulse" />
-            </td>
-            <td class="hidden md:table-cell py-3 px-3">
-              <div class="h-4 bg-gh-border rounded w-1/3 animate-pulse" />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  <div v-else-if="error">
-    {{ error.message }}
-  </div>
-  <div v-else-if="data" class="mt-12">
+  <div v-if="data" class="mt-12">
     <div v-if="filteredItems.length === 0" class="text-center py-8">
       <p class="text-gh-muted">No accounts found matching "{{ search }}"</p>
     </div>
@@ -144,16 +86,6 @@ useHead({
             <th class="text-right py-2 px-3 font-semibold text-gh-text">
               Pull Requests
             </th>
-            <th
-              class="hidden md:table-cell text-left py-2 px-3 font-semibold text-gh-text"
-            >
-              First Detected
-            </th>
-            <th
-              class="hidden md:table-cell text-left py-2 px-3 font-semibold text-gh-text"
-            >
-              Last Detected
-            </th>
           </tr>
         </thead>
         <tbody>
@@ -165,33 +97,21 @@ useHead({
             <td class="py-3 px-3">
               <NuxtLink
                 :to="`/user/${item.username}`"
-                class="font-mono font-semibold text-gh-accent hover:underline transition-colors"
+                class="font-mono flex items-center gap-2 underline font-semibold text-gh-accent hover:underline transition-colors"
               >
-                {{ item.username ?? `User ${item.userId}` }}
+                <span class="i-lucide:user-round"></span>
+                <span>{{ item.username ?? `User ${item.userId}` }}</span>
               </NuxtLink>
             </td>
             <td class="py-3 px-3 text-right text-gh-muted">
-              {{ item.totalPrs }}
-            </td>
-            <td class="hidden md:table-cell py-3 px-3 text-xs text-gh-muted">
-              <span
-                v-if="item.firstDetected"
-                :title="`${formatDateNice(item.firstDetected)}`"
-              >
-                {{ formatRelativeTime(item.firstDetected) }}
-              </span>
-            </td>
-            <td class="hidden md:table-cell py-3 px-3 text-xs text-gh-muted">
-              <span
-                v-if="item.lastDetected"
-                :title="`${formatDateNice(item.lastDetected)}`"
-              >
-                {{ formatRelativeTime(item.lastDetected) }}
-              </span>
+              {{ item.totalPrs }} PR{{ item.totalPrs === 1 ? "" : "s" }}
             </td>
           </tr>
         </tbody>
       </table>
     </div>
+  </div>
+  <div v-else-if="error">
+    {{ error.message }}
   </div>
 </template>

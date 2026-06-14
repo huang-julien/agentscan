@@ -24,8 +24,5 @@ export type DetectedAutomationResponse = {
 export type DetectedAutomation = {
   username: string;
   userId: number;
-  score: number;
   totalPrs: number;
-  firstDetected: string;
-  lastDetected?: string;
 };

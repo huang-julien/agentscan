@@ -49,7 +49,7 @@ useHead({
       This is a list of accounts verified by the community as using heavy
       automation, spamming through automation, or operating as bots.
     </p>
-    <p v-if="items?.[0]" class="mt-6 text-sm text-gray-500">
+    <p v-if="items?.[0]" class="mt-6 text-sm text-gh-text">
       Last updated:
 
       <span
