@@ -77,6 +77,8 @@ onBeforeUnmount(() => {
         <span class="i-lucide:git-fork text-sm"></span>
         <span>AgentScan GitHub action</span>
       </NuxtLink>
+
+      <ContributorsList class="my-12" />
     </div>
   </div>
 </template>
