@@ -85,6 +85,21 @@ export default defineNuxtConfig({
         maxAge: 60 * 5,
       },
     },
+    "/api/detected-automations/**": {
+      cache: {
+        maxAge: 60 * 5,
+      },
+    },
+    "/api/health/**": {
+      cache: {
+        maxAge: 60 * 5,
+      },
+    },
+    "/api/integration/**": {
+      cache: {
+        maxAge: 60 * 5,
+      },
+    },
     "/api/scan/**": {
       cache: {
         maxAge: 60 * 5,
