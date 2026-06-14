@@ -31,17 +31,17 @@ async function main() {
           {
             name: "🟢 Organic",
             value: `${stats.organic.percentage}%`,
-            inline: true,
+            inline: false,
           },
           {
             name: "🟡 Mixed",
             value: `${stats.mixed.percentage}%`,
-            inline: true,
+            inline: false,
           },
           {
             name: "🔴 Automation",
             value: `${stats.automation.percentage}%`,
-            inline: true,
+            inline: false,
           },
           {
             name: "⚫ Automation PR closure rate",
