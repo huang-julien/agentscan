@@ -204,7 +204,7 @@ useSeoAnalysis(identifyAnalysis, {
 
         <section
           v-if="verifiedAutomation"
-          class="mt-4 pt-4 border-t border-gh-border-light"
+          class="mt-4 pt-4 border-t border-gh-border-light/40"
         >
           <p
             class="flex gap-2 items-center mb-2 text-gh-danger-hover font-mono text-base"
@@ -252,7 +252,7 @@ useSeoAnalysis(identifyAnalysis, {
         <li
           v-for="flag in data.analysis.flags"
           :key="flag.label"
-          class="not-last:border-b border-gh-border-light py-4 @md:py-2"
+          class="not-last:border-b border-gh-border-light/40 py-4 @md:py-4"
         >
           <h4 class="font-mono">{{ flag.label }}</h4>
           <p class="text-gh-muted">

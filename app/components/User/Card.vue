@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { GitHubUser } from "@unveil/identity";
+
 defineProps<{
   user: GitHubUser;
 }>();

@@ -9,8 +9,8 @@
 :root[data-theme="dark"] {
   --bg: #0b0b0b;
   --card: #161616;
-  --border: #262626;
-  --border-light: #575757;
+  --border: #575757;
+  --border-light: #757575;
   --text: #f0f0f0;
   --text-transparent: rgba(240, 240, 240, 0.25);
   --text-muted: #808080;

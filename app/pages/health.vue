@@ -101,7 +101,7 @@ const hasEnoughData = computed(() => {
         </header>
 
         <ul
-          class="text-center flex flex-col md:flex-row gap-2 items-center md:text-left w-full justify-evenly mt-6 px-4 md:py-4 md:border-y md:border-y-gh-border/60"
+          class="text-center flex flex-col md:flex-row gap-2 items-center md:text-left w-full justify-evenly mt-6 px-4 md:py-4 md:border-y md:border-y-gh-border/40"
         >
           <li
             v-for="config in classificationConfigs"
