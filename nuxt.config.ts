@@ -64,6 +64,12 @@ export default defineNuxtConfig({
       },
     },
 
+    "/api/contributors/**": {
+      cache: {
+        maxAge: 60 * 60 * 24,
+      },
+    },
+
     "/api/identify-replicant/**": {
       isr: {
         expiration: 60 * 10,
@@ -73,17 +79,17 @@ export default defineNuxtConfig({
     },
     "/api/verified-automations/**": {
       cache: {
-        maxAge: 60 * 5,
+        maxAge: 60 * 60,
       },
     },
     "/api/detected-automations/**": {
       cache: {
-        maxAge: 60 * 5,
+        maxAge: 60 * 60,
       },
     },
     "/api/health/**": {
       cache: {
-        maxAge: 60 * 5,
+        maxAge: 60 * 60,
       },
     },
     "/api/integration/**": {
