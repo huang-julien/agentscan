@@ -36,13 +36,13 @@ const filteredItems = computed<DetectedAutomation[]>(() => {
 });
 
 useHead({
-  title: "Daily flags | AgentScan",
+  title: "Daily signals | AgentScan",
   meta: [
-    { property: "og:title", content: "Daily flags | AgentScan" },
+    { property: "og:title", content: "Daily signals | AgentScan" },
     {
       property: "og:description",
       content:
-        "Accounts detected during the GitHub Ecosystem Health daily scans",
+        "Accounts identified by the daily Ecosystem Health scan as showing signs of automated behavior.",
     },
     { property: "og:type", content: "website" },
   ],
@@ -51,13 +51,13 @@ useHead({
 
 <template>
   <header class="text-center md:text-left text-pretty">
-    <h1 class="text-2xl font-semibold">Daily flags</h1>
+    <h1 class="text-2xl font-semibold">Daily signals</h1>
     <p class="text-gh-muted mt-2">
       Accounts identified by the daily
       <NuxtLink to="/health" class="underline hover:text-gh-text">
         Ecosystem Health
       </NuxtLink>
-      scan for signs of partial or fully automated behavior.
+      scan as showing signs of automated behavior.
     </p>
 
     <p v-if="data?.lastScanDate" class="mt-6 text-sm text-gh-text">
