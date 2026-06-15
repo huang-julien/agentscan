@@ -32,7 +32,7 @@ const isHomePage = computed<boolean>(() => route.name === "index");
         external
         target="_blank"
         to="https://github.com/marketplace/actions/agentscan"
-        class="hidden md:inline-flex items-center px-3.5 lg:px-2.5 gap-1 py-1 font-medium text-xs rounded-full border border-gh-border/80 text-gh-muted hover:text-gh-text hover:border-gh-border/60 transition-colors whitespace-nowrap"
+        class="hidden lg:inline-flex items-center px-3.5 lg:px-2.5 gap-1 py-1 font-medium text-xs rounded-full border border-gh-border/80 text-gh-muted hover:text-gh-text hover:border-gh-border/60 transition-colors whitespace-nowrap"
         title="Use it as a GitHub Action"
       >
         <span class="i-lucide:git-fork"></span>

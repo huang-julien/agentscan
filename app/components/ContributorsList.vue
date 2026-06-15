@@ -9,11 +9,11 @@ const { data: contributors } = await useContributorsList();
     >
       Built by the community
     </h3>
-    <ul class="flex items-center">
+    <ul class="flex items-center flex-wrap justify-center px-12 gap-1 md:gap-0">
       <li
         v-for="contributor in contributors"
         :key="contributor.name"
-        class="mx-1 transition-all lg:group-hover:mx-0 lg:-mx-1"
+        class="mx-1 transition-all md:group-hover:mx-0 md:-mx-1"
       >
         <NuxtLink
           :to="contributor.url"

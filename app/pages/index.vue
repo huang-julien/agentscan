@@ -15,6 +15,6 @@ function handleSubmit(name: string) {
   <VerifiedAutomationList />
 
   <ContributorsList
-    class="absolute bottom-4 left-1/2 -translate-x-1/2 hidden lg:flex"
+    class="absolute bottom-4 left-1/2 -translate-x-1/2 hidden md:flex"
   />
 </template>
