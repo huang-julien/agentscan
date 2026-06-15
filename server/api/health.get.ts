@@ -9,18 +9,26 @@ export default defineEventHandler(async () => {
   const octokit = new Octokit({ auth: config.githubToken });
 
   try {
-    const { data } = await octokit.rest.repos.getContent({
+    // Step 1: Get the file metadata (sha) without content
+    const { data: fileData } = await octokit.rest.repos.getContent({
       owner: "matteogabriele",
       repo: "agentscan",
       path: "data/scan-results.json",
     });
 
-    let results: EcosystemHealthItem[] = [];
-
-    if ("content" in data) {
-      const content = Buffer.from(data.content, "base64").toString("utf-8");
-      results = JSON.parse(content);
+    if (!("sha" in fileData)) {
+      throw new Error("Unexpected response: not a file");
     }
+
+    // Step 2: Fetch the full blob using the sha — no size limit
+    const { data: blobData } = await octokit.rest.git.getBlob({
+      owner: "matteogabriele",
+      repo: "agentscan",
+      file_sha: fileData.sha,
+    });
+
+    const content = Buffer.from(blobData.content, "base64").toString("utf-8");
+    const results: EcosystemHealthItem[] = JSON.parse(content);
 
     const automation: number[] = [];
     const mixed: number[] = [];
@@ -54,7 +62,8 @@ export default defineEventHandler(async () => {
       countsByDate,
       dates,
     };
-  } catch {
+  } catch (error) {
+    console.error("Ecosystem health fetch error:", error);
     throw createError({
       statusCode: 500,
       message: "Failed to fetch verified automations list",
