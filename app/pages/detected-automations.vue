@@ -95,7 +95,7 @@ useHead({
           <tr
             v-for="item in filteredItems"
             :key="item.userId"
-            class="border-b border-gh-border-light hover:bg-gh-border-light/30 transition-colors"
+            class="not-last:border-b border-gh-border-light/40 hover:bg-gh-border/10 transition-colors"
           >
             <td class="py-3 px-3">
               <NuxtLink

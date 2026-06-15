@@ -4,12 +4,16 @@ const { data: contributors } = await useContributorsList();
 
 <template>
   <div class="flex flex-col items-center group">
-    <h3 class="text-sm mb-2 text-gh-muted">Built by the community</h3>
+    <h3
+      class="text-sm mb-2 text-gh-muted/80 group-hover:text-gh-text transition-all"
+    >
+      Built by the community
+    </h3>
     <ul class="flex items-center">
       <li
         v-for="contributor in contributors"
         :key="contributor.name"
-        class="-mx-1 transition-all group-hover:mx-0"
+        class="mx-1 transition-all lg:group-hover:mx-0 lg:-mx-1"
       >
         <NuxtLink
           :to="contributor.url"

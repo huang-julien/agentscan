@@ -1,12 +1,4 @@
 <script setup lang="ts">
-import type { IdentityClassification } from "@unveil/identity";
-
-const { data: ecosystemHealth } = await useEcosystemHealth();
-const data = computed(() => ecosystemHealth.value?.results);
-const categoryProgression = computed(() => {
-  return ecosystemHealth.value?.categoryProgression;
-});
-
 const { formattedNextScanTime } = useNextScanTime();
 
 definePageMeta({
@@ -31,51 +23,10 @@ useHead({
     { property: "og:type", content: "website" },
   ],
 });
-
-type ClassificationStats = Record<
-  IdentityClassification,
-  { count: number; percentage: string }
->;
-
-type ClassificationConfig = {
-  key: IdentityClassification;
-  label: string;
-  bgColor: string;
-};
-
-const classificationConfigs: ClassificationConfig[] = [
-  { key: "organic", label: "Organic", bgColor: "bg-green-500" },
-  { key: "mixed", label: "Mixed", bgColor: "bg-gh-amber" },
-  { key: "automation", label: "Automation", bgColor: "bg-gh-danger-hover" },
-];
-
-const latestDayStats = computed<ClassificationStats | null>(() => {
-  return getHealthStats(data.value);
-});
-
-const automatedPrClosure = computed(() => {
-  const value = getClosedPrPercentageTotal(data.value, [0, 50]);
-  const percentage = value === null ? "N/A" : `${value}%`;
-
-  return {
-    label: "Automation PR closure rate",
-    bgColor: "bg-gray-500",
-    percentage,
-  };
-});
-
-const MIN_DAY_DATA_COLLECTION = 4;
-const hasEnoughData = computed(() => {
-  if (!ecosystemHealth.value?.dates.length) {
-    return false;
-  }
-
-  return ecosystemHealth.value.dates.length >= MIN_DAY_DATA_COLLECTION;
-});
 </script>
 
 <template>
-  <section v-if="hasEnoughData" class="flex flex-col gap-6 h-full pb-8 md:pb-0">
+  <section class="flex flex-col gap-6 h-full pb-8 md:pb-0">
     <div
       class="h-full flex flex-col items-center justify-center w-full relative"
     >
@@ -100,59 +51,9 @@ const hasEnoughData = computed(() => {
           </div>
         </header>
 
-        <ul
-          class="text-center flex flex-col md:flex-row gap-2 items-center md:text-left w-full justify-evenly mt-6 px-4 md:py-4 md:border-y md:border-y-gh-border/40"
-        >
-          <li
-            v-for="config in classificationConfigs"
-            :key="config.key"
-            class="flex gap-2 items-center flex-1 justify-center"
-          >
-            <span :class="`size-2 ${config.bgColor} block rounded-full`"></span>
-
-            <p class="text-sm">
-              {{ config.label }}
-
-              <span class="text-gh-muted ml-1">
-                {{ latestDayStats?.[config.key]?.percentage }}%
-              </span>
-
-              <span
-                :class="[
-                  getTrendColor({
-                    value: categoryProgression?.[config.key].trend,
-                    reversed: config.key !== 'organic',
-                  }),
-                ]"
-              >
-                <span
-                  :class="[
-                    getTrendArrow(categoryProgression?.[config.key].trend),
-                  ]"
-                  class="shrink-0"
-                  style="vertical-align: middle"
-                />
-                {{ formatTrend(categoryProgression?.[config.key].trend) }}
-              </span>
-            </p>
-          </li>
-        </ul>
-
-        <ul
-          class="text-center flex flex-col md:flex-row md:gap-6 items-center md:text-left w-full justify-center mt-2 mb-12 md:my-4"
-        >
-          <li class="flex gap-2 items-center">
-            <span
-              :class="`size-2 ${automatedPrClosure.bgColor} block rounded-full`"
-            ></span>
-            <div class="text-sm text-gh-text flex gap-2">
-              {{ automatedPrClosure.label }}
-              <span class="text-gh-muted">
-                {{ automatedPrClosure.percentage }}
-              </span>
-            </div>
-          </li>
-        </ul>
+        <div class="mt-6 mb-12">
+          <HealthTrendItemList />
+        </div>
       </div>
 
       <div class="max-h-[300px] sm:max-h-[500px] w-full h-full">
@@ -167,21 +68,5 @@ const hasEnoughData = computed(() => {
         </p>
       </div>
     </div>
-  </section>
-  <section
-    v-else
-    class="flex items-center justify-center flex-col gap-6 h-full"
-  >
-    <header class="text-center flex items-center flex-col">
-      <AnimationTea class="mb-4" />
-      <h1 class="text-xl font-semibold">Data collection in progress</h1>
-      <div class="text-gh-muted mt-2 flex flex-col text-pretty max-w-lg">
-        <p>
-          We're currently collecting fresh data to provide you with more
-          accurate ecosystem health insights.
-        </p>
-        <p class="mt-2">Please check back soon.</p>
-      </div>
-    </header>
   </section>
 </template>
